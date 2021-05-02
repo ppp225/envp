@@ -33,6 +33,21 @@ func GetEnvString(key string, defaultVal string) string {
 	return defaultVal
 }
 
+// GetEnvPassword is GetEnvString, but doesn't log full value, just ****12
+func GetEnvPassword(key string, defaultVal string) string {
+	if value, exists := os.LookupEnv(key); exists {
+		logVal := "****"
+		if len(value) > 3 {
+			logVal += value[len(value)-2:]
+		}
+		log.Infof("$%s=%q", key, logVal)
+		return value
+	}
+
+	log.Warnf("$%s=%q (env var not found, using fallback)", key, defaultVal)
+	return defaultVal
+}
+
 func stringInSlice(a string, list []string) bool {
 	for _, b := range list {
 		if b == a {
