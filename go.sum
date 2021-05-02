@@ -1,0 +1,4 @@
+github.com/joho/godotenv v1.3.0 h1:Zjp+RcGpHhGlrMbJzXTrZZPrWj+1vfm90La1wgB6Bhc=
+github.com/joho/godotenv v1.3.0/go.mod h1:7hK45KPybAkOC6peb+G5yklZfMxEjkZhHbwpqxOKXbg=
+github.com/ppp225/lvlog v0.0.0-20200403133427-3402eefbdb5d h1:XZihl51dJCdZO+v+IKCPglWTFtl3zEmwzmdM9GGJY70=
+github.com/ppp225/lvlog v0.0.0-20200403133427-3402eefbdb5d/go.mod h1:1bF1t4rkZ1mg4HGBCVU4z7FpUGcS4w4nv5oQObgiXTc=
